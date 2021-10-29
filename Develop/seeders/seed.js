@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const db = require('../models');
 
-mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost/SingapuriFit', {
+mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost/SingapuriFit', 
+{
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
